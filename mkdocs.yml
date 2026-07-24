@@ -69,7 +69,8 @@ plugins:
 nav:
   - Home: index.md
   - OpenStack:
-      - openstack/index.md
+      - 개요: openstack/index.md
       - OSA: openstack/osa.md
-  - 준비중:
-      - wip.md
+      - 트러블슈팅:
+          - Live Migration TLS 실패: openstack/troubleshooting/nova-live-migration-tls.md
+  - 준비중: wip.md
