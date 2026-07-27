@@ -59,6 +59,9 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - search:
@@ -68,6 +71,9 @@ plugins:
 
 nav:
   - Home: index.md
+  - About:
+      - 소개: about/index.md
+      - 경력: about/career.md
   - OpenStack:
       - 개요: openstack/index.md
       - OSA: openstack/osa.md
