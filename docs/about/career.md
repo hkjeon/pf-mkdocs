@@ -5,17 +5,27 @@
 ## 도메인 전환 궤적
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'fontSize':'22px','primaryColor':'#3b5bdb','primaryTextColor':'#ffffff','primaryBorderColor':'#1c3d8f','lineColor':'#495057','titleColor':'#212529'}}}%%
-timeline
-    title 기술 도메인 전환
-    2009-2015 : 이동통신망 / 시뮬레이터
-              : LTE EPC, PS-LTE, 재난안전망
-    2015-2018 : NFV 전환기
-              : C-SGN, NFV 플랫폼, OpenStack 기술지원
-    2018-2022 : OpenStack 구축 본격화
-              : SDDC, Ceph, 5G 가상화/컨테이너
-    2022-현재  : 국책 프라이빗 클라우드
-              : 시험연구기관, 공기업, 보안연구기관
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px','primaryColor':'#3b5bdb','primaryTextColor':'#ffffff','primaryBorderColor':'#1c3d8f','lineColor':'#495057'}}}%%
+flowchart LR
+    A["2009-2015
+이동통신망 / 시뮬레이터
+LTE EPC, PS-LTE, 재난안전망"]
+    B["2015-2018
+NFV 전환기
+C-SGN, NFV 플랫폼, OpenStack 기술지원"]
+    C["2018-2022
+OpenStack 구축 본격화
+SDDC, Ceph, 5G 가상화/컨테이너"]
+    D["2022-현재
+국책 프라이빗 클라우드
+시험연구기관, 공기업, 보안연구기관"]
+
+    A --> B --> C --> D
+
+    style A fill:#3b5bdb,color:#ffffff,stroke:#1c3d8f,stroke-width:2px
+    style B fill:#2f9e44,color:#ffffff,stroke:#1c7a2e,stroke-width:2px
+    style C fill:#e8890c,color:#ffffff,stroke:#a6640a,stroke-width:2px
+    style D fill:#862e9c,color:#ffffff,stroke:#5f1f70,stroke-width:2px
 ```
 
 ## 클라우드 / 인프라 프로젝트
