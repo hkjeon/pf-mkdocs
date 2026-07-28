@@ -13,8 +13,8 @@
 <polygon points="96,306 124,306 110,320" fill="#3b5bdb"/>
 <circle cx="110" cy="280" r="26" fill="#3b5bdb" stroke="#ffffff" stroke-width="3"/>
 <text x="110" y="285" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">2009</text>
-<text x="390" y="290" text-anchor="middle" font-size="15" font-weight="bold" fill="#212529">NFV 전환기</text>
-<text x="390" y="310" text-anchor="middle" font-size="13" fill="#495057">2015-2018</text>
+<text x="390" y="139 text-anchor="middle" font-size="15" font-weight="bold" fill="#212529">NFV 전환기</text>
+<text x="390" y="159 text-anchor="middle" font-size="13" fill="#495057">2015-2018</text>
 <polygon points="376,236 404,236 390,250" fill="#2f9e44"/>
 <circle cx="390" cy="210" r="26" fill="#2f9e44" stroke="#ffffff" stroke-width="3"/>
 <text x="390" y="215" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">2015</text>
