@@ -5,20 +5,16 @@
 ## 도메인 전환 궤적
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px','primaryColor':'#3b5bdb','primaryTextColor':'#ffffff','primaryBorderColor':'#1c3d8f','lineColor':'#495057'}}}%%
-flowchart LR
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'20px','fontFamily':'\"Malgun Gothic\", \"Apple SD Gothic Neo\", sans-serif','primaryColor':'#3b5bdb','primaryTextColor':'#ffffff','primaryBorderColor':'#1c3d8f','lineColor':'#495057'}}}%%
+flowchart TD
     A["2009-2015
-이동통신망 / 시뮬레이터
-LTE EPC, PS-LTE, 재난안전망"]
+이동통신망 / 시뮬레이터"]
     B["2015-2018
-NFV 전환기
-C-SGN, NFV 플랫폼, OpenStack 기술지원"]
+NFV 전환기"]
     C["2018-2022
-OpenStack 구축 본격화
-SDDC, Ceph, 5G 가상화/컨테이너"]
+OpenStack 구축 본격화"]
     D["2022-현재
-국책 프라이빗 클라우드
-시험연구기관, 공기업, 보안연구기관"]
+국책 프라이빗 클라우드"]
 
     A --> B --> C --> D
 
