@@ -5,7 +5,7 @@
 ## 도메인 전환 궤적
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'fontSize':'22px','primaryColor':'#3b5bdb','primaryTextColor':'#ffffff','primaryBorderColor':'#1c3d8f','lineColor':'#495057'}}}%%
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'22px','primaryColor':'#3b5bdb','primaryTextColor':'#ffffff','primaryBorderColor':'#1c3d8f','lineColor':'#495057','titleColor':'#212529'}}}%%
 timeline
     title 기술 도메인 전환
     2009-2015 : 이동통신망 / 시뮬레이터
