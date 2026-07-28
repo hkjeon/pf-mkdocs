@@ -4,47 +4,32 @@
 
 ## 도메인 전환 궤적
 
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'fontSize':'20px','fontFamily':'"Malgun Gothic", "Apple SD Gothic Neo", sans-serif','primaryColor':'#3b5bdb','primaryTextColor':'#ffffff','primaryBorderColor':'#1c3d8f','lineColor':'#495057'}}}%%
-flowchart LR
-    subgraph g1[" "]
-    direction TB
-    sp1a[ ]:::spacer
-    sp1b[ ]:::spacer
-    sp1c[ ]:::spacer
-    A["2009-2015<br/>이동통신망"]:::s1
-    sp1a ~~~ sp1b ~~~ sp1c ~~~ A
-    end
-    subgraph g2[" "]
-    direction TB
-    sp2a[ ]:::spacer
-    sp2b[ ]:::spacer
-    B["2015-2018<br/>NFV 전환기"]:::s2
-    sp2a ~~~ sp2b ~~~ B
-    end
-    subgraph g3[" "]
-    direction TB
-    sp3a[ ]:::spacer
-    C["2018-2022<br/>OpenStack 구축"]:::s3
-    sp3a ~~~ C
-    end
-    subgraph g4[" "]
-    direction TB
-    D["2022-현재<br/>국책 클라우드"]:::s4
-    end
-
-    A --> B --> C --> D
-
-    classDef spacer fill:none,stroke:none
-    classDef s1 fill:#3b5bdb,color:#ffffff,stroke:#1c3d8f,stroke-width:2px
-    classDef s2 fill:#2f9e44,color:#ffffff,stroke:#1c7a2e,stroke-width:2px
-    classDef s3 fill:#e8890c,color:#ffffff,stroke:#a66040,stroke-width:2px
-    classDef s4 fill:#862e9c,color:#ffffff,stroke:#5f1f70,stroke-width:2px
-    style g1 fill:none,stroke:none
-    style g2 fill:none,stroke:none
-    style g3 fill:none,stroke:none
-    style g4 fill:none,stroke:none
-```
+<div class="career-road" markdown="0">
+<svg viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;">
+<path d="M110,320 L390,320 L390,250 L630,250 L630,180 L810,180 L810,90" fill="none" stroke="#343a40" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M110,320 L390,320 L390,250 L630,250 L630,180 L810,180 L810,90" fill="none" stroke="#ffffff" stroke-width="4" stroke-dasharray="14,14" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="110" y="209" text-anchor="middle" font-size="15" font-weight="bold" fill="#212529">이동통신망</text>
+<text x="110" y="229" text-anchor="middle" font-size="13" fill="#495057">2009-2015</text>
+<polygon points="96,306 124,306 110,320" fill="#3b5bdb"/>
+<circle cx="110" cy="280" r="26" fill="#3b5bdb" stroke="#ffffff" stroke-width="3"/>
+<text x="110" y="285" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">2009</text>
+<text x="390" y="290" text-anchor="middle" font-size="15" font-weight="bold" fill="#212529">NFV 전환기</text>
+<text x="390" y="310" text-anchor="middle" font-size="13" fill="#495057">2015-2018</text>
+<polygon points="376,236 404,236 390,250" fill="#2f9e44"/>
+<circle cx="390" cy="210" r="26" fill="#2f9e44" stroke="#ffffff" stroke-width="3"/>
+<text x="390" y="215" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">2015</text>
+<text x="630" y="69" text-anchor="middle" font-size="15" font-weight="bold" fill="#212529">OpenStack 구축</text>
+<text x="630" y="89" text-anchor="middle" font-size="13" fill="#495057">2018-2022</text>
+<polygon points="616,166 644,166 630,180" fill="#e8890c"/>
+<circle cx="630" cy="140" r="26" fill="#e8890c" stroke="#ffffff" stroke-width="3"/>
+<text x="630" y="145" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">2018</text>
+<text x="770" y="35" text-anchor="end" font-size="15" font-weight="bold" fill="#212529">국책 클라우드</text>
+<text x="770" y="55" text-anchor="end" font-size="13" fill="#495057">2022-현재</text>
+<polygon points="796,76 824,76 810,90" fill="#862e9c"/>
+<circle cx="810" cy="50" r="26" fill="#862e9c" stroke="#ffffff" stroke-width="3"/>
+<text x="810" y="55" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">2022</text>
+</svg>
+</div>
 
 ## 클라우드 / 인프라 프로젝트
 
