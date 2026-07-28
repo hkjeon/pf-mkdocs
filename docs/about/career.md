@@ -5,23 +5,45 @@
 ## 도메인 전환 궤적
 
 ```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'fontSize':'20px','fontFamily':'\"Malgun Gothic\", \"Apple SD Gothic Neo\", sans-serif','primaryColor':'#3b5bdb','primaryTextColor':'#ffffff','primaryBorderColor':'#1c3d8f','lineColor':'#495057'}}}%%
-flowchart TD
-    A["2009-2015
-이동통신망 / 시뮬레이터"]
-    B["2015-2018
-NFV 전환기"]
-    C["2018-2022
-OpenStack 구축 본격화"]
-    D["2022-현재
-국책 프라이빗 클라우드"]
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'20px','fontFamily':'"Malgun Gothic", "Apple SD Gothic Neo", sans-serif','primaryColor':'#3b5bdb','primaryTextColor':'#ffffff','primaryBorderColor':'#1c3d8f','lineColor':'#495057'}}}%%
+flowchart LR
+    subgraph g1[" "]
+    direction TB
+    sp1a[ ]:::spacer
+    sp1b[ ]:::spacer
+    sp1c[ ]:::spacer
+    A["2009-2015<br/>이동통신망"]:::s1
+    sp1a ~~~ sp1b ~~~ sp1c ~~~ A
+    end
+    subgraph g2[" "]
+    direction TB
+    sp2a[ ]:::spacer
+    sp2b[ ]:::spacer
+    B["2015-2018<br/>NFV 전환기"]:::s2
+    sp2a ~~~ sp2b ~~~ B
+    end
+    subgraph g3[" "]
+    direction TB
+    sp3a[ ]:::spacer
+    C["2018-2022<br/>OpenStack 구축"]:::s3
+    sp3a ~~~ C
+    end
+    subgraph g4[" "]
+    direction TB
+    D["2022-현재<br/>국책 클라우드"]:::s4
+    end
 
     A --> B --> C --> D
 
-    style A fill:#3b5bdb,color:#ffffff,stroke:#1c3d8f,stroke-width:2px
-    style B fill:#2f9e44,color:#ffffff,stroke:#1c7a2e,stroke-width:2px
-    style C fill:#e8890c,color:#ffffff,stroke:#a6640a,stroke-width:2px
-    style D fill:#862e9c,color:#ffffff,stroke:#5f1f70,stroke-width:2px
+    classDef spacer fill:none,stroke:none
+    classDef s1 fill:#3b5bdb,color:#ffffff,stroke:#1c3d8f,stroke-width:2px
+    classDef s2 fill:#2f9e44,color:#ffffff,stroke:#1c7a2e,stroke-width:2px
+    classDef s3 fill:#e8890c,color:#ffffff,stroke:#a66040,stroke-width:2px
+    classDef s4 fill:#862e9c,color:#ffffff,stroke:#5f1f70,stroke-width:2px
+    style g1 fill:none,stroke:none
+    style g2 fill:none,stroke:none
+    style g3 fill:none,stroke:none
+    style g4 fill:none,stroke:none
 ```
 
 ## 클라우드 / 인프라 프로젝트
